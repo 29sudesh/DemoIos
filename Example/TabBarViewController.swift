@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabBarViewController: UIViewController {
+class TabBarViewController: BaseViewController {
 
     
    

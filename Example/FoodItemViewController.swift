@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FoodItemViewController: UIViewController {
+class FoodItemViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,3 +80,4 @@ class HSUnderLineTextField: UITextField , UITextFieldDelegate {
         border.borderColor = lineColor.cgColor
     }
 }
+

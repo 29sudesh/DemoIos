@@ -265,8 +265,13 @@
                         <barButtonItem key="leftBarButtonItem" title="Back" id="Fo7-qh-NVk">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="baseline_shopping_basket_black_18pt" id="rT7-SN-1KC">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Cti-Sw-8vx">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7T5-Xx-pXR">
+                                <rect key="frame" x="335" y="10" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.84704861109999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="baseline_shopping_basket_black_18pt"/>
+                            </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -336,7 +341,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="FZ0-kR-H8J" kind="show" animates="NO" id="1dg-n2-wee"/>
+                                            <segue destination="BCm-c7-xGa" kind="show" animates="NO" id="6uf-Yg-9fe"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="YUa-Zy-3gh" detailTextLabel="fja-h4-tFu" imageView="UJc-qv-kBC" rowHeight="84" style="IBUITableViewCellStyleSubtitle" id="3oS-4L-AN5">
@@ -475,9 +480,9 @@
         <!--Food-->
         <scene sceneID="gFv-2D-UPp">
             <objects>
-                <tableViewController id="BCm-c7-xGa" sceneMemberID="viewController">
+                <tableViewController id="BCm-c7-xGa" customClass="BaseTableView" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="29D-2a-Iag">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -521,7 +526,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="IJq-Q1-cJG">
-                                                    <rect key="frame" x="327" y="33" width="16" height="16"/>
+                                                    <rect key="frame" x="293" y="16" width="50" height="50"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -532,7 +537,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Shf-64-ixv" kind="show" animates="NO" id="tbx-Ps-CAN"/>
+                                            <segue destination="xTz-5Y-zfs" kind="show" animates="NO" id="H3d-wE-ttb"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="82" id="uqu-Vr-8fz">
@@ -572,7 +577,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="VIx-SM-7G8">
-                                                    <rect key="frame" x="327" y="33" width="16" height="16"/>
+                                                    <rect key="frame" x="293" y="16" width="50" height="50"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -620,7 +625,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="eEI-XZ-YG4">
-                                                    <rect key="frame" x="327" y="33" width="16" height="16"/>
+                                                    <rect key="frame" x="293" y="16" width="50" height="50"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -668,7 +673,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="PWm-2U-Xbz">
-                                                    <rect key="frame" x="327" y="33" width="16" height="16"/>
+                                                    <rect key="frame" x="293" y="16" width="50" height="50"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -691,12 +696,23 @@
                     <navigationItem key="navigationItem" title="Food" id="g0F-KK-zMs">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="Wyv-N0-NEc">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onback:" destination="BCm-c7-xGa" id="2r7-HR-aUH"/>
+                            </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="baseline_shopping_basket_black_18pt" id="ez6-vZ-cE2">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="AAF-W8-EJb">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GiX-um-SlL">
+                                <rect key="frame" x="335" y="10" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.84704861109999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="baseline_shopping_basket_black_18pt"/>
+                            </button>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="onBack" destination="Wyv-N0-NEc" id="ttu-bx-FPu"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xsq-E8-S0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -949,16 +965,25 @@
                             <constraint firstItem="NRZ-48-5JD" firstAttribute="centerX" secondItem="Zvp-wG-QNT" secondAttribute="centerX" id="uLb-Mu-dxA"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Shop" image="baseline_shopping_cart_black_18pt" id="fRS-6G-cQT"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Food" id="W43-aa-KaK">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="fMW-SS-h9f">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onBack:" destination="xTz-5Y-zfs" id="TPT-y1-l2j"/>
+                            </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="baseline_shopping_basket_black_18pt" id="KBh-fx-gtU">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="2T4-S4-vmg">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wdT-q4-yte">
+                                <rect key="frame" x="292" y="10" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.84704861109999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="baseline_shopping_basket_black_18pt"/>
+                            </button>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="375" height="800"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r53-oZ-mbn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -968,7 +993,7 @@
         <!--Coustom order-->
         <scene sceneID="R9v-Ib-bEN">
             <objects>
-                <viewController id="zjO-AQ-TmY" sceneMemberID="viewController">
+                <viewController id="zjO-AQ-TmY" customClass="BaseViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4DO-dj-4yN"/>
                         <viewControllerLayoutGuide type="bottom" id="KeN-le-wqa"/>
@@ -1135,9 +1160,17 @@
                     <navigationItem key="navigationItem" title="Coustom order" id="bt3-UY-taB">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="ZYm-nc-4Yy">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onBack:" destination="zjO-AQ-TmY" id="Rmf-ce-jQL"/>
+                            </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="baseline_shopping_basket_black_18pt" id="jMu-Bc-5Y9">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="7AZ-KN-XwA">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hAP-5j-Qfi">
+                                <rect key="frame" x="335" y="10" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.84704861109999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="baseline_shopping_basket_black_18pt"/>
+                            </button>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -1149,7 +1182,7 @@
         <!--Jobs-->
         <scene sceneID="4IP-Hl-Z8F">
             <objects>
-                <viewController id="aSF-4y-2oT" sceneMemberID="viewController">
+                <viewController id="aSF-4y-2oT" customClass="BaseViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LcC-fW-0QV"/>
                         <viewControllerLayoutGuide type="bottom" id="6io-JE-a9B"/>
@@ -1286,9 +1319,17 @@
                     <navigationItem key="navigationItem" title="Jobs" id="QUx-8i-C81">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="ep9-KG-X06">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onBack:" destination="aSF-4y-2oT" id="YT9-Ky-mZQ"/>
+                            </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="baseline_shopping_basket_black_18pt" id="XRy-Ma-yHU">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="pfc-ZZ-AqW">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WnM-PU-nyc">
+                                <rect key="frame" x="335" y="10" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.84704861109999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="baseline_shopping_basket_black_18pt"/>
+                            </button>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -1392,12 +1433,12 @@
             </objects>
             <point key="canvasLocation" x="3255.1999999999998" y="1921.8890554722641"/>
         </scene>
-        <!--Shop-->
+        <!--Navigation Controller-->
         <scene sceneID="hjh-2Y-7fV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FZ0-kR-H8J" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Shop" image="baseline_shopping_cart_black_18pt" id="fRS-6G-cQT"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="FzV-k6-PTl"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zB6-iC-GD5">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1409,7 +1450,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UPg-5P-83x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="472.80000000000001" y="1928.1859070464768"/>
+            <point key="canvasLocation" x="377" y="2552"/>
         </scene>
     </scenes>
     <resources>
@@ -1425,7 +1466,9 @@
         <image name="uncheck" width="18" height="18"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1dg-n2-wee"/>
+        <segue reference="vat-oC-OXj"/>
         <segue reference="yQx-Lx-6xD"/>
+        <segue reference="H3d-wE-ttb"/>
+        <segue reference="29q-zr-4gK"/>
     </inferredMetricsTieBreakers>
 </document>
